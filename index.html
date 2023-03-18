@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Color Scheme Generator</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <section class="user-selection">
+      <form id="color-input">
+        <input type="color" name="user-color" id="user-color"/>
+        <select name="scheme-name" id="scheme-name">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button>Get color scheme</button>
+      </form>
+    </section>
+    <section class="colors" id="colors">
+    </section>
+    <section class="theme-switch-wrapper">
+        <div class="slider-section"><label class="theme-switch" for="mode-checkbox">
+          <input type="checkbox" id="mode-checkbox"/>
+          <div class="slider round"></div>
+        </label>
+          <p id="dark-mode-label" class="slider-label">Dark Mode!</p></div>
+    </section>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
